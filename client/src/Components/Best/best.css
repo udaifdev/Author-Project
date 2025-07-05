@@ -1,0 +1,142 @@
+/* Reset */
+ 
+
+/* Section Container */
+.book-hero {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f7f9fc, #e6ecf3);
+}
+
+.book-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.book-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Text Content */
+.book-text {
+  flex: 1 1 500px;
+}
+
+.badge {
+  display: inline-block;
+  background: #927533b0;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2d3436;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #636e72;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  color: #444;
+}
+
+.action-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.release small {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.release span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* CTA Button */
+.cta-button {
+  background: #73550fb0;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #b08521b0;
+}
+
+/* Image */
+.book-image-wrapper {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.book-cover {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.book-cover:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .book-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+  .book-cover {
+    max-width: 60%;
+    height: auto;
+  }
+}
