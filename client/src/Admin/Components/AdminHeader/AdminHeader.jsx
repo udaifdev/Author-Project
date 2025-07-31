@@ -19,7 +19,7 @@ const AdminHeader = () => {
                 {/* Logo Section */}
                 <div className="logo-section">
                     <img
-                        src="/arjun logo.PNG"
+                        src="/arjundelogo.jpeg"
                         alt="Admin Logo"
                         className="logo-image"
                     />

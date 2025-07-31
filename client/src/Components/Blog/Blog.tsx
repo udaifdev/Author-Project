@@ -147,9 +147,9 @@ const Blog = () => {
       
       {/* Events Section */}
       <div className="events-section">
-        <h2 style={{ textAlign: 'center', fontSize: '28px', marginBottom: '40px', color: '#333' }}>
+        {/* <h2 style={{ textAlign: 'center', fontSize: '28px', marginBottom: '40px', color: '#333' }}>
           Upcoming Events
-        </h2>
+        </h2> */}
         
         {loading ? (
           <div style={{ textAlign: 'center', padding: '40px', fontSize: '18px', color: '#666' }}>
@@ -194,9 +194,9 @@ const Blog = () => {
                     </span>
                     <h3>{event.title}</h3>
                     <p>{event.description}</p>
-                    <a href="#" className="post-link">
+                    {/* <a href="#" className="post-link">
                       Learn More <ArrowRight size={14} />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               ))}

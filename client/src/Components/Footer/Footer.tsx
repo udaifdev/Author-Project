@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         </nav>
         
         <div className="footer-right">
-          <p className="footer-copyright">© Created by MUHAMMAD UDAIF | All rights Reserved</p>
+          <p className="footer-copyright">© Created by  M_M_M_M | All rights Reserved</p>
         </div>
       </div>
     </footer>
