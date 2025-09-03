@@ -8,7 +8,7 @@ import Header from './Components/Header/Header.jsx';
 import Land from './Components/Land/Land.tsx';
 import About from './Components/About/About.tsx';
 import Book from './Components/Book/Book.tsx';
-import Best from './Components/Best/Best.tsx';
+// import Best from './Components/Best/Best.tsx';
 import Opinions from './Components/Opinions/Opinions.tsx';
 import Blog from './Components/Blog/Blog.tsx';
 import FormPage from './Pages/Contact/FormPage.tsx';
@@ -38,7 +38,6 @@ const MainLayout = () => {
         </div>
         <div id="books">
           <Book />
-          <Best />
         </div>
         <div>
           <Opinions />

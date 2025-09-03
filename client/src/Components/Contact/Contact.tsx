@@ -17,13 +17,9 @@ const Contact: React.FC = () => {
     <section className="contact-section" id="contact">
       <div className="contact-container">
         <div className="contact-heading">
-          <p className="contact-subtitle">Contacts</p>
-          <h2 className="contact-title">I Love to Chat With My Readers!</h2>
-          <p className="contact-description">
-            If you want share your opinion on my books or simply say hi, feel free contact me in any convenient way.
-          </p>
+           
           <div className="social-icons">
-            <a href="#" className="social-icon">
+            <a href="https://www.facebook.com/profile.php?id=61578183835719&mibextid=ZbWKwL" className="social-icon">
               <Facebook size={20} />
             </a>
             <a href="https://www.instagram.com/arjunmaurya_author?igsh=am1oYmg1NnZucWlr" className="social-icon">
@@ -55,13 +51,13 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          <div className="contact-column">
+          {/* <div className="contact-column">
             <h3>Agent Requests</h3>
             <div className="contact-info">
               <p>edubuilt@gmail.com</p>
               <p>(+91) 94486 00644</p>
             </div>
-          </div>
+          </div> */}
           {/* 
           <div className="contact-column">
             <h3>Want to Leave a Request?</h3>

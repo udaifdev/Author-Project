@@ -91,7 +91,7 @@ const Header = () => {
                         {/* Social Media Links - Desktop */}
                         <div className="social-links">
                             <a
-                                href="https://instagram.com"
+                                href="https://www.instagram.com/arjunmaurya_author?igsh=am1oYmg1NnZucWlr"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link instagram"
@@ -100,7 +100,7 @@ const Header = () => {
                                 <Instagram size={22} />
                             </a>
                             <a
-                                href="https://facebook.com"
+                                href="https://www.facebook.com/profile.php?id=61578183835719&mibextid=ZbWKwL"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link facebook"
@@ -109,7 +109,7 @@ const Header = () => {
                                 <Facebook size={22} />
                             </a>
                             <a
-                                href="https://twitter.com"
+                                href="https://youtube.com/@jegamedia?si=4NF1GmJrdgPKYg_f"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link twitter"
@@ -118,7 +118,7 @@ const Header = () => {
                                 <Youtube size={22} />
                             </a>
                             <a
-                                href="https://linkedin.com"
+                                href="https://www.linkedin.com/in/arjun-maurya-725b1b327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link linkedin"

@@ -40,7 +40,6 @@ const Opinions = () => {
       title: "English Professor",
       imageUrl: "/jems.jpeg"
     },
-     
   ];
 
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -54,15 +53,13 @@ const Opinions = () => {
     setIsAnimating(true);
     const nextIndex = (currentIndex + 1) % reviews.length;
     
-    // Move slider to the left (which appears as coming from right)
     if (sliderRef.current) {
       sliderRef.current.style.transition = 'transform 0.8s ease-in-out';
-      sliderRef.current.style.transform = `translateX(-${(nextIndex) * 100}%)`;
+      sliderRef.current.style.transform = `translateX(-${nextIndex * 100}%)`;
     }
     
     setCurrentIndex(nextIndex);
     
-    // Reset animation flag after transition completes
     setTimeout(() => {
       setIsAnimating(false);
     }, 800);
@@ -113,13 +110,16 @@ const Opinions = () => {
                   <p className="opinion-text">{review.content}</p>
                   <div className="quote-icon closing-quote">❞</div>
                 </div>
-                
                 <div className="opinion-footer">
                   <div className="opinion-image-container">
                     <img 
                       src={review.imageUrl} 
                       alt={review.author || "Reviewer"} 
                       className="opinion-image"
+                      onError={(e) => {
+                        // Fallback for broken images
+                        e.currentTarget.src = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTU2IiBoZWlnaHQ9IjE1NiIgdmlld0JveD0iMCAwIDE1NiAxNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iNzgiIGN5PSI3OCIgcj0iNzgiIGZpbGw9IiNFM0UzRTMiLz4KICA8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjUwcHgiIGZpbGw9IiM4ODg4ODgiPj88L3RleHQ+Cjwvc3ZnPg==";
+                      }}
                     />
                   </div>
                   <div className="opinion-author-info">
